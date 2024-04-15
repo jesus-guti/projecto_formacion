@@ -44,7 +44,7 @@
     place-content: center;
 }
 
-.circular-btn-active {
+.circular-btn--active {
     background-color: black;
     width: 42px;
     height: 42px;
@@ -71,4 +71,44 @@
 .navbar .bottom-group {
     margin-top: auto;
     margin-bottom: 42px;
+}
+
+.main-header. {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.search-container {
+    max-width: 300px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 50px;
+    background: white;
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 50px;
+    width: 100%;
+}
+
+/* Hide the default browser styles for the search button */
+
+/* If you need a focus style for accessibility */
+
+.search-input:focus {
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Make sure the form does not submit if the input is empty */
+
+form:invalid .search-button {
+    cursor: default;
+    pointer-events: none;
 }
