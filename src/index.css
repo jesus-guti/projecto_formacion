@@ -3,14 +3,14 @@
 @tailwind utilities;
 :root {
     --light-gray: #f7f7f7;
-    --gray: #e2e2e2;
+    --gray: #e0e0e0;
     --dark-gray: #888888;
     --darker-gray: #666666;
     --main-green: #5ee85b;
     --text-xs: 12px;
     --text-sm: 14px;
     --text-base: 16px;
-    --text-md: 18px;
+    --text-lg: 20px;
     --text-xl: 40px;
     --text-2xl: 64px;
     --inline-main-padding: 20px;
@@ -33,6 +33,14 @@
 
 .logo {
     width: 42px;
+}
+
+.circular-small-btn {
+    height: 42px;
+    min-width: 42px;
+    border-radius: 9999px;
+    display: grid;
+    place-content: center;
 }
 
 .circular-btn {
@@ -86,16 +94,27 @@
     gap: 8px;
 }
 
-.rounded-full-container {
+.rounded-full-container-outlined {
     max-width: 255px;
-    padding-block: 6px;
-    padding-inline: 6px 16px;
+    padding-block: 8px;
+    padding-inline: 8px 16px;
     border-radius: 9999px;
-    background: white;
     display: flex;
     gap: 12px;
     align-items: center;
     border: 1px solid var(--gray);
+}
+
+.rounded-full-container {
+    min-height: 64px;
+    max-width: 280px;
+    padding-block: 8px;
+    padding-inline: 8px 16px;
+    border-radius: 9999px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    /* border: 1px solid var(--gray); */
 }
 
 .search-input {
@@ -149,6 +168,7 @@ form:invalid .search-button {
     display: flex;
     align-items: center;
     margin-block: 18px;
+    gap: 8px;
 }
 
 .hero-title {
